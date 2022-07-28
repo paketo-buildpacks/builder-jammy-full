@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/builder-jammy-base
+module github.com/paketo-buildpacks/builder-jammy-full
 
 go 1.18
 
