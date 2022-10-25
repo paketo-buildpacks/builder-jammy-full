@@ -5,7 +5,7 @@
 This builder uses the [Paketo Jammy Full
 Stack](https://github.com/paketo-buildpacks/jammy-full-stack) (Ubuntu Jammy
 Jellyfish build and run images) with buildpacks for Java, Java Native Image,
-Go, Python, .NET, Node.js, and Procfile.
+Go, Python, .NET, Node.js, Apache HTTPD, NGINX, and Procfile.
 
 To see which versions of build and run images, buildpacks, and the lifecycle
 that are contained within a given builder version, see the
