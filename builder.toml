@@ -33,7 +33,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Java,
   version = "0.4.0"
 
 [lifecycle]
-  version = "0.15.1"
+  version = "0.15.2"
 
 [[order]]
 
