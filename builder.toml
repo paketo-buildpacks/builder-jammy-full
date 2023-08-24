@@ -1,4 +1,4 @@
-description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Java, Go, Python, Apache HTTPD, NGINX and Procfile"
+description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/dotnet-core:0.39.0"
