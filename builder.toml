@@ -21,8 +21,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "1.8.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/php:2.10.1"
-  version = "2.10.1"
+  uri = "docker://gcr.io/paketo-buildpacks/php:2.10.2"
+  version = "2.10.2"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/procfile:5.6.4"
@@ -37,8 +37,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.40.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.18.0"
-  version = "0.18.0"
+  uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.19.0"
+  version = "0.19.0"
 
 [lifecycle]
   version = "0.17.1"
@@ -71,13 +71,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/php"
-    version = "2.10.1"
+    version = "2.10.2"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "0.18.0"
+    version = "0.19.0"
 
 [[order]]
 
