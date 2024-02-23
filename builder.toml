@@ -37,8 +37,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.43.1"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.20.1"
-  version = "0.20.1"
+  uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.20.2"
+  version = "0.20.2"
 
 [lifecycle]
   version = "0.18.5"
@@ -77,7 +77,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "0.20.1"
+    version = "0.20.2"
 
 [[order]]
 
