@@ -9,8 +9,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "4.8.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/java-native-image:9.2.0"
-  version = "9.2.0"
+  uri = "docker://gcr.io/paketo-buildpacks/java-native-image:9.2.1"
+  version = "9.2.1"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/java:12.1.0"
@@ -83,7 +83,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "9.2.0"
+    version = "9.2.1"
 
 [[order]]
 
