@@ -9,20 +9,20 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "4.8.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/java-native-image:9.3.1"
-  version = "9.3.1"
+  uri = "docker://gcr.io/paketo-buildpacks/java-native-image:9.4.0"
+  version = "9.4.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/java:13.0.1"
-  version = "13.0.1"
+  uri = "docker://gcr.io/paketo-buildpacks/java:14.0.0"
+  version = "14.0.0"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/nodejs:2.2.0"
   version = "2.2.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/php:2.15.0"
-  version = "2.15.0"
+  uri = "docker://gcr.io/paketo-buildpacks/php:2.16.0"
+  version = "2.16.0"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/procfile:5.8.0"
@@ -37,8 +37,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "0.45.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.21.0"
-  version = "0.21.0"
+  uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.22.0"
+  version = "0.22.0"
 
 [lifecycle]
   version = "0.19.6"
@@ -71,25 +71,25 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/php"
-    version = "2.15.0"
+    version = "2.16.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "0.21.0"
+    version = "0.22.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "9.3.1"
+    version = "9.4.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java"
-    version = "13.0.1"
+    version = "14.0.0"
 
 [[order]]
 
