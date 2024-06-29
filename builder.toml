@@ -9,12 +9,12 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "4.8.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/java-native-image:9.6.0"
-  version = "9.6.0"
+  uri = "docker://gcr.io/paketo-buildpacks/java-native-image:9.7.0"
+  version = "9.7.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/java:15.0.0"
-  version = "15.0.0"
+  uri = "docker://gcr.io/paketo-buildpacks/java:15.1.0"
+  version = "15.1.0"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/nodejs:2.2.0"
@@ -83,13 +83,13 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "9.6.0"
+    version = "9.7.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java"
-    version = "15.0.0"
+    version = "15.1.0"
 
 [[order]]
 
@@ -104,7 +104,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
     version = "5.9.0"
 
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.45"
+  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.46"
   id = "io.buildpacks.stacks.jammy"
   run-image = "index.docker.io/paketobuildpacks/run-jammy-full:latest"
   run-image-mirrors = []
