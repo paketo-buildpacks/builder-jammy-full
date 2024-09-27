@@ -1,12 +1,12 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/dotnet-core:0.48.5"
-  version = "0.48.5"
+  uri = "docker://gcr.io/paketo-buildpacks/dotnet-core:0.48.6"
+  version = "0.48.6"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/go:4.10.3"
-  version = "4.10.3"
+  uri = "docker://gcr.io/paketo-buildpacks/go:4.10.4"
+  version = "4.10.4"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/java-native-image:10.0.0"
@@ -17,28 +17,28 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "16.0.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/nodejs:4.1.0"
-  version = "4.1.0"
+  uri = "docker://gcr.io/paketo-buildpacks/nodejs:4.1.1"
+  version = "4.1.1"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/php:2.17.2"
-  version = "2.17.2"
+  uri = "docker://gcr.io/paketo-buildpacks/php:2.17.3"
+  version = "2.17.3"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/procfile:5.9.3"
   version = "5.9.3"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/python:2.20.2"
-  version = "2.20.2"
+  uri = "docker://gcr.io/paketo-buildpacks/python:2.20.3"
+  version = "2.20.3"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/ruby:0.47.4"
-  version = "0.47.4"
+  uri = "docker://gcr.io/paketo-buildpacks/ruby:0.47.5"
+  version = "0.47.5"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.25.0"
-  version = "0.25.0"
+  uri = "docker://gcr.io/paketo-buildpacks/web-servers:0.25.1"
+  version = "0.25.1"
 
 [lifecycle]
   version = "0.20.2"
@@ -47,37 +47,37 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/ruby"
-    version = "0.47.4"
+    version = "0.47.5"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core"
-    version = "0.48.5"
+    version = "0.48.6"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/go"
-    version = "4.10.3"
+    version = "4.10.4"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/python"
-    version = "2.20.2"
+    version = "2.20.3"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/php"
-    version = "2.17.2"
+    version = "2.17.3"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "0.25.0"
+    version = "0.25.1"
 
 [[order]]
 
@@ -95,7 +95,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "4.1.0"
+    version = "4.1.1"
 
 [[order]]
 
