@@ -5,8 +5,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "1.2.4"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/go:4.13.4"
-  version = "4.13.4"
+  uri = "docker://gcr.io/paketo-buildpacks/go:4.13.5"
+  version = "4.13.5"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/java-native-image:11.4.0"
@@ -17,28 +17,28 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "17.5.0"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/nodejs:7.1.4"
-  version = "7.1.4"
+  uri = "docker://gcr.io/paketo-buildpacks/nodejs:7.1.5"
+  version = "7.1.5"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/php:2.19.8"
-  version = "2.19.8"
+  uri = "docker://gcr.io/paketo-buildpacks/php:2.19.9"
+  version = "2.19.9"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/procfile:5.10.2"
   version = "5.10.2"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/python:2.23.4"
-  version = "2.23.4"
+  uri = "docker://gcr.io/paketo-buildpacks/python:2.23.5"
+  version = "2.23.5"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/ruby:0.47.6"
   version = "0.47.6"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/web-servers:1.1.4"
-  version = "1.1.4"
+  uri = "docker://gcr.io/paketo-buildpacks/web-servers:1.1.5"
+  version = "1.1.5"
 
 [lifecycle]
   version = "0.20.5"
@@ -59,25 +59,25 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/go"
-    version = "4.13.4"
+    version = "4.13.5"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/python"
-    version = "2.23.4"
+    version = "2.23.5"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/php"
-    version = "2.19.8"
+    version = "2.19.9"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "1.1.4"
+    version = "1.1.5"
 
 [[order]]
 
@@ -95,7 +95,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "7.1.4"
+    version = "7.1.5"
 
 [[order]]
 
@@ -104,7 +104,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
     version = "5.10.2"
 
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.68"
+  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.69"
   id = "io.buildpacks.stacks.jammy"
   run-image = "index.docker.io/paketobuildpacks/run-jammy-full:latest"
   run-image-mirrors = []
