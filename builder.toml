@@ -29,8 +29,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "5.10.2"
 
 [[buildpacks]]
-  uri = "docker://gcr.io/paketo-buildpacks/python:2.23.9"
-  version = "2.23.9"
+  uri = "docker://gcr.io/paketo-buildpacks/python:2.24.0"
+  version = "2.24.0"
 
 [[buildpacks]]
   uri = "docker://gcr.io/paketo-buildpacks/ruby:0.47.6"
@@ -65,7 +65,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/python"
-    version = "2.23.9"
+    version = "2.24.0"
 
 [[order]]
 
