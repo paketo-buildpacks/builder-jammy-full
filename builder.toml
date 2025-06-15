@@ -9,24 +9,24 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "4.15.6"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java-native-image:11.11.0"
-  version = "11.11.0"
+  uri = "docker://docker.io/paketobuildpacks/java-native-image:11.12.0"
+  version = "11.12.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java:18.8.0"
-  version = "18.8.0"
+  uri = "docker://docker.io/paketobuildpacks/java:18.9.0"
+  version = "18.9.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nodejs:7.9.2"
-  version = "7.9.2"
+  uri = "docker://docker.io/paketobuildpacks/nodejs:7.10.0"
+  version = "7.10.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/php:2.19.9"
   version = "2.19.9"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.0"
-  version = "5.11.0"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.11.1"
+  version = "5.11.1"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/python:2.27.1"
@@ -83,28 +83,28 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "11.11.0"
+    version = "11.12.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java"
-    version = "18.8.0"
+    version = "18.9.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "7.9.2"
+    version = "7.10.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.11.0"
+    version = "5.11.1"
 
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.81"
+  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.86"
   id = "io.buildpacks.stacks.jammy"
   run-image = "index.docker.io/paketobuildpacks/run-jammy-full:latest"
   run-image-mirrors = []
