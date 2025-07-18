@@ -1,12 +1,12 @@
 description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/dotnet-core:3.0.1"
-  version = "3.0.1"
+  uri = "docker://docker.io/paketobuildpacks/dotnet-core:3.1.0"
+  version = "3.1.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/go:4.16.3"
-  version = "4.16.3"
+  uri = "docker://docker.io/paketobuildpacks/go:4.16.4"
+  version = "4.16.4"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/java-native-image:11.13.0"
@@ -29,16 +29,16 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "5.11.2"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/python:2.29.0"
-  version = "2.29.0"
+  uri = "docker://docker.io/paketobuildpacks/python:2.29.1"
+  version = "2.29.1"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/ruby:0.47.6"
   version = "0.47.6"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/web-servers:2.1.0"
-  version = "2.1.0"
+  uri = "docker://docker.io/paketobuildpacks/web-servers:2.2.0"
+  version = "2.2.0"
 
 [lifecycle]
   version = "0.20.11"
@@ -53,19 +53,19 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/dotnet-core"
-    version = "3.0.1"
+    version = "3.1.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/go"
-    version = "4.16.3"
+    version = "4.16.4"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/python"
-    version = "2.29.0"
+    version = "2.29.1"
 
 [[order]]
 
@@ -77,7 +77,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/web-servers"
-    version = "2.1.0"
+    version = "2.2.0"
 
 [[order]]
 
