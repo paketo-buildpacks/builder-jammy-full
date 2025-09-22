@@ -56,7 +56,7 @@ func testPhp(t *testing.T, context spec.G, it spec.S) {
 
 			var logs fmt.Stringer
 			image, logs, err = pack.Build.
-				WithPullPolicy("never").
+				WithPullPolicy("always").
 				WithEnv(map[string]string{
 					"BP_PHP_WEB_DIR": "htdocs",
 				}).
