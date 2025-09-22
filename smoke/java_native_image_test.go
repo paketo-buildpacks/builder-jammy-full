@@ -56,7 +56,7 @@ func testJavaNativeImage(t *testing.T, context spec.G, it spec.S) {
 
 			var logs fmt.Stringer
 			image, logs, err = pack.Build.
-				WithPullPolicy("never").
+				WithPullPolicy("always").
 				WithBuilder(Builder).
 				WithEnv(map[string]string{
 					"BP_NATIVE_IMAGE":          "true",
