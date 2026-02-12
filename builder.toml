@@ -41,7 +41,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "4.0.3"
 
 [lifecycle]
-  version = "0.21.1"
+  version = "0.21.2"
 
 [[order]]
 
