@@ -58,6 +58,7 @@ func testRuby(t *testing.T, context spec.G, it spec.S) {
 			image, logs, err = pack.Build.
 				WithPullPolicy("always").
 				WithBuilder(Builder).
+				WithBuildpacks(BuildpackURIs["ruby"]).
 				Execute(name, source)
 			Expect(err).ToNot(HaveOccurred(), logs.String)
 
