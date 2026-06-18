@@ -24,6 +24,8 @@ func TestSmoke(t *testing.T) {
 
 	flag.Parse()
 
+	Builder = "paketobuildpacks/builder-jammy-buildpackless-full:latest"
+
 	Expect(Builder).NotTo(Equal(""))
 
 	SetDefaultEventuallyTimeout(60 * time.Second)
