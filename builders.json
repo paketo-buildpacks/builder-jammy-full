@@ -1,0 +1,10 @@
+{
+  "builders": [
+    {
+      "name": "builder-jammy-buildpackless-full",
+      "path": ".",
+      "container_repository": "builder-jammy-buildpackless-full",
+      "test_runners": ["ubuntu-24.04"]
+    }
+  ]
+}
