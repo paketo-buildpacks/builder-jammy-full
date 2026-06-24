@@ -2,6 +2,9 @@ package smoke_test
 
 import (
 	"flag"
+	"fmt"
+	"os"
+	"regexp"
 	"testing"
 	"time"
 
@@ -14,6 +17,8 @@ import (
 
 var Builder string
 
+var BuildpackURIs map[string]string
+
 func init() {
 	flag.StringVar(&Builder, "name", "", "")
 }
@@ -24,7 +29,21 @@ func TestSmoke(t *testing.T) {
 
 	flag.Parse()
 
+	Builder = "paketobuildpacks/builder-jammy-buildpackless-full:latest"
+
 	Expect(Builder).NotTo(Equal(""))
+
+	data, err := os.ReadFile("../builder.toml")
+	Expect(err).NotTo(HaveOccurred())
+
+	re := regexp.MustCompile(`uri = "docker://docker.io/paketobuildpacks/([^:]+):([^"]+)"`)
+	matches := re.FindAllStringSubmatch(string(data), -1)
+	Expect(matches).NotTo(BeEmpty())
+
+	BuildpackURIs = make(map[string]string, len(matches))
+	for _, m := range matches {
+		BuildpackURIs[m[1]] = fmt.Sprintf("docker://docker.io/paketobuildpacks/%s:%s", m[1], m[2])
+	}
 
 	SetDefaultEventuallyTimeout(60 * time.Second)
 

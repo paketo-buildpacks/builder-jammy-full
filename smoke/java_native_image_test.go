@@ -58,6 +58,7 @@ func testJavaNativeImage(t *testing.T, context spec.G, it spec.S) {
 			image, logs, err = pack.Build.
 				WithPullPolicy("always").
 				WithBuilder(Builder).
+				WithBuildpacks(BuildpackURIs["java-native-image"]).
 				WithEnv(map[string]string{
 					"BP_NATIVE_IMAGE":          "true",
 					"BP_MAVEN_BUILD_ARGUMENTS": "-Dmaven.test.skip=true --no-transfer-progress package -Pnative",

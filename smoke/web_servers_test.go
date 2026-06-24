@@ -58,6 +58,7 @@ func testWebServers(t *testing.T, context spec.G, it spec.S) {
 			image, logs, err = pack.Build.
 				WithPullPolicy("always").
 				WithBuilder(Builder).
+				WithBuildpacks(BuildpackURIs["web-servers"]).
 				Execute(name, source)
 			Expect(err).ToNot(HaveOccurred(), logs.String)
 
@@ -104,6 +105,7 @@ func testWebServers(t *testing.T, context spec.G, it spec.S) {
 			image, logs, err = pack.Build.
 				WithPullPolicy("always").
 				WithBuilder(Builder).
+				WithBuildpacks(BuildpackURIs["web-servers"]).
 				Execute(name, source)
 			Expect(err).ToNot(HaveOccurred(), logs.String)
 
@@ -151,6 +153,7 @@ func testWebServers(t *testing.T, context spec.G, it spec.S) {
 				image, logs, err = pack.Build.
 					WithPullPolicy("always").
 					WithBuilder(Builder).
+					WithBuildpacks(BuildpackURIs["nodejs"], BuildpackURIs["web-servers"]).
 					WithEnv(map[string]string{
 						"BP_NODE_RUN_SCRIPTS":             "build",
 						"BP_WEB_SERVER":                   "httpd",
@@ -185,6 +188,7 @@ func testWebServers(t *testing.T, context spec.G, it spec.S) {
 				image, logs, err = pack.Build.
 					WithPullPolicy("always").
 					WithBuilder(Builder).
+					WithBuildpacks(BuildpackURIs["nodejs"], BuildpackURIs["web-servers"]).
 					WithEnv(map[string]string{
 						"BP_NODE_RUN_SCRIPTS":             "build",
 						"BP_WEB_SERVER":                   "nginx",
