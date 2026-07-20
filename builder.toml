@@ -25,8 +25,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "2.19.9"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.4"
-  version = "5.13.4"
+  uri = "docker://docker.io/paketobuildpacks/procfile:5.13.5"
+  version = "5.13.5"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/python:2.54.0"
@@ -101,7 +101,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
-    version = "5.13.4"
+    version = "5.13.5"
 
 [stack]
   build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.189"
