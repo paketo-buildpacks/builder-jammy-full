@@ -41,7 +41,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "4.9.0"
 
 [lifecycle]
-  version = "0.21.15"
+  version = "0.21.16"
 
 [[order]]
 
@@ -104,6 +104,6 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
     version = "5.13.6"
 
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.203"
+  build-image = "docker.io/paketobuildpacks/build-jammy-full:0.1.204"
   id = "io.buildpacks.stacks.jammy"
   run-image = "index.docker.io/paketobuildpacks/run-jammy-full:latest"
