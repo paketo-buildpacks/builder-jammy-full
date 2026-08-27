@@ -21,8 +21,8 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "10.9.2"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/php:3.2.1"
-  version = "3.2.1"
+  uri = "docker://docker.io/paketobuildpacks/php:3.3.0"
+  version = "3.3.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/procfile:5.13.7"
@@ -71,7 +71,7 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/php"
-    version = "3.2.1"
+    version = "3.3.0"
 
 [[order]]
 
