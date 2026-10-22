@@ -9,16 +9,16 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
   version = "4.23.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.13.0"
-  version = "14.13.0"
+  uri = "docker://docker.io/paketobuildpacks/java-native-image:14.14.0"
+  version = "14.14.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java:22.6.0"
-  version = "22.6.0"
+  uri = "docker://docker.io/paketobuildpacks/java:22.7.0"
+  version = "22.7.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/nodejs:10.13.2"
-  version = "10.13.2"
+  uri = "docker://docker.io/paketobuildpacks/nodejs:10.14.0"
+  version = "10.14.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/php:3.7.3"
@@ -83,19 +83,19 @@ description = "Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apach
 
   [[order.group]]
     id = "paketo-buildpacks/java-native-image"
-    version = "14.13.0"
+    version = "14.14.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/java"
-    version = "22.6.0"
+    version = "22.7.0"
 
 [[order]]
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "10.13.2"
+    version = "10.14.0"
 
 [[order]]
 
