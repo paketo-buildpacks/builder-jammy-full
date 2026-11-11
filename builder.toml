@@ -21,12 +21,12 @@ uri = 'docker://docker.io/paketobuildpacks/nodejs:10.15.0'
 version = '10.15.0'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/php:3.7.6'
-version = '3.7.6'
+uri = 'docker://docker.io/paketobuildpacks/php:3.8.0'
+version = '3.8.0'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/procfile:5.15.7'
-version = '5.15.7'
+uri = 'docker://docker.io/paketobuildpacks/procfile:5.15.8'
+version = '5.15.8'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/python:2.68.0'
@@ -66,7 +66,7 @@ version = '2.68.0'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/php'
-version = '3.7.6'
+version = '3.8.0'
 
 [[order]]
 [[order.group]]
@@ -91,7 +91,7 @@ version = '10.15.0'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/procfile'
-version = '5.15.7'
+version = '5.15.8'
 
 [stack]
 id = 'io.buildpacks.stacks.jammy'
