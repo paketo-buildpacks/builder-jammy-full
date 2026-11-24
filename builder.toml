@@ -1,8 +1,8 @@
 description = 'Ubuntu 22.04 Jammy Jellyfish full image with buildpacks for Apache HTTPD, Go, Java, Java Native Image, .NET, NGINX, Node.js, PHP, Procfile, Python, and Ruby'
 
 [[buildpacks]]
-uri = 'docker://docker.io/paketobuildpacks/dotnet-core:4.15.2'
-version = '4.15.2'
+uri = 'docker://docker.io/paketobuildpacks/dotnet-core:4.15.3'
+version = '4.15.3'
 
 [[buildpacks]]
 uri = 'docker://docker.io/paketobuildpacks/go:4.23.5'
@@ -51,7 +51,7 @@ version = '3.5.1'
 [[order]]
 [[order.group]]
 id = 'paketo-buildpacks/dotnet-core'
-version = '4.15.2'
+version = '4.15.3'
 
 [[order]]
 [[order.group]]
